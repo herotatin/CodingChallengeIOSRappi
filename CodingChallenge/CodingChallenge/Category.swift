@@ -8,21 +8,33 @@
 
 import Foundation
 import UIKit
+import CoreData
 
-class Category : NSObject{
+class Category : NSManagedObject {
     
     
     //Variable para identificar el nombre unico de esta categoria
-    var name    :   String!
+    @NSManaged var name    :   String?
     
     //Variable que contiene la imagen de la actual categoria
-    var image   :   UIImage!
+    @NSManaged var image   :   UIImage?
     
+    @NSManaged var id      :  String?
+   
+    func getCategoryFromJson(categoryDict : [String:Any]) {
     
-    //Constructor basico de la clase categoria
-    init(name : String) {
-        self.name   =   name
-        //self.image  =   image
+        
+        guard let id = categoryDict["im:id"] as? String,
+            let label = categoryDict["label"] as? String
+            
+            else {
+                return
+        }
+        
+        self.id = id
+        self.name = label
     }
     
 }
+
+

@@ -7,12 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F21D8E101E646157000FD86D /* Store.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F21D8E0E1E646157000FD86D /* Store.xcdatamodeld */; };
 		F23493781E616E0600CA59E4 /* CategoriesCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23493771E616E0600CA59E4 /* CategoriesCollectionViewController.swift */; };
 		F234937A1E6176F000CA59E4 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23493791E6176F000CA59E4 /* Category.swift */; };
 		F234937C1E61810D00CA59E4 /* ApplicationsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F234937B1E61810C00CA59E4 /* ApplicationsCollectionViewController.swift */; };
 		F234937E1E61818D00CA59E4 /* Application.swift in Sources */ = {isa = PBXBuildFile; fileRef = F234937D1E61818D00CA59E4 /* Application.swift */; };
 		F23493801E6206E800CA59E4 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F234937F1E6206E800CA59E4 /* CategoryCell.swift */; };
 		F23493821E621A2200CA59E4 /* AppCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23493811E621A2200CA59E4 /* AppCell.swift */; };
+		F24D72F21E63D18500D2905A /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24D72F11E63D18500D2905A /* NetworkService.swift */; };
+		F24D72F41E63E04700D2905A /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24D72F31E63E04700D2905A /* Store.swift */; };
 		F2B3800C1E6163AC00AF654D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B3800B1E6163AC00AF654D /* AppDelegate.swift */; };
 		F2B3800E1E6163AC00AF654D /* DetailAppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B3800D1E6163AC00AF654D /* DetailAppViewController.swift */; };
 		F2B380111E6163AD00AF654D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2B3800F1E6163AD00AF654D /* Main.storyboard */; };
@@ -21,12 +24,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F21D8E0F1E646157000FD86D /* Store.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Store.xcdatamodel; sourceTree = "<group>"; };
 		F23493771E616E0600CA59E4 /* CategoriesCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoriesCollectionViewController.swift; sourceTree = "<group>"; };
 		F23493791E6176F000CA59E4 /* Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		F234937B1E61810C00CA59E4 /* ApplicationsCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationsCollectionViewController.swift; sourceTree = "<group>"; };
 		F234937D1E61818D00CA59E4 /* Application.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Application.swift; sourceTree = "<group>"; };
 		F234937F1E6206E800CA59E4 /* CategoryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
 		F23493811E621A2200CA59E4 /* AppCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCell.swift; sourceTree = "<group>"; };
+		F24D72F11E63D18500D2905A /* NetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		F24D72F31E63E04700D2905A /* Store.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
 		F2B380081E6163AC00AF654D /* Top Apps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Top Apps.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2B3800B1E6163AC00AF654D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F2B3800D1E6163AC00AF654D /* DetailAppViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailAppViewController.swift; sourceTree = "<group>"; };
@@ -67,6 +73,7 @@
 		F2B3800A1E6163AC00AF654D /* CodingChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				F21D8E0E1E646157000FD86D /* Store.xcdatamodeld */,
 				F2B3801F1E61653300AF654D /* Controller */,
 				F2B3801E1E61652500AF654D /* View */,
 				F2B3801D1E61651100AF654D /* Model */,
@@ -80,6 +87,8 @@
 			children = (
 				F23493791E6176F000CA59E4 /* Category.swift */,
 				F234937D1E61818D00CA59E4 /* Application.swift */,
+				F24D72F11E63D18500D2905A /* NetworkService.swift */,
+				F24D72F31E63E04700D2905A /* Store.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -87,6 +96,10 @@
 		F2B3801E1E61652500AF654D /* View */ = {
 			isa = PBXGroup;
 			children = (
+				F2B380141E6163AD00AF654D /* LaunchScreen.storyboard */,
+				F2B3800F1E6163AD00AF654D /* Main.storyboard */,
+				F234937F1E6206E800CA59E4 /* CategoryCell.swift */,
+				F23493811E621A2200CA59E4 /* AppCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -97,8 +110,6 @@
 				F2B3800D1E6163AC00AF654D /* DetailAppViewController.swift */,
 				F23493771E616E0600CA59E4 /* CategoriesCollectionViewController.swift */,
 				F234937B1E61810C00CA59E4 /* ApplicationsCollectionViewController.swift */,
-				F234937F1E6206E800CA59E4 /* CategoryCell.swift */,
-				F23493811E621A2200CA59E4 /* AppCell.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -106,9 +117,7 @@
 		F2B380201E61655400AF654D /* Resource */ = {
 			isa = PBXGroup;
 			children = (
-				F2B3800F1E6163AD00AF654D /* Main.storyboard */,
 				F2B380121E6163AD00AF654D /* Assets.xcassets */,
-				F2B380141E6163AD00AF654D /* LaunchScreen.storyboard */,
 				F2B380171E6163AD00AF654D /* Info.plist */,
 			);
 			name = Resource;
@@ -192,6 +201,9 @@
 				F23493821E621A2200CA59E4 /* AppCell.swift in Sources */,
 				F2B3800E1E6163AC00AF654D /* DetailAppViewController.swift in Sources */,
 				F2B3800C1E6163AC00AF654D /* AppDelegate.swift in Sources */,
+				F24D72F21E63D18500D2905A /* NetworkService.swift in Sources */,
+				F21D8E101E646157000FD86D /* Store.xcdatamodeld in Sources */,
+				F24D72F41E63E04700D2905A /* Store.swift in Sources */,
 				F234937C1E61810D00CA59E4 /* ApplicationsCollectionViewController.swift in Sources */,
 				F23493801E6206E800CA59E4 /* CategoryCell.swift in Sources */,
 				F23493781E616E0600CA59E4 /* CategoriesCollectionViewController.swift in Sources */,
@@ -362,6 +374,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F21D8E0E1E646157000FD86D /* Store.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F21D8E0F1E646157000FD86D /* Store.xcdatamodel */,
+			);
+			currentVersion = F21D8E0F1E646157000FD86D /* Store.xcdatamodel */;
+			path = Store.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = F2B380001E6163AC00AF654D /* Project object */;
 }
